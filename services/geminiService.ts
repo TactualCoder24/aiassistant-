@@ -14,7 +14,7 @@ let chat: Chat | null = null;
 const API_KEY = (window as any).process?.env?.API_KEY;
 
 const initializeChat = (): Chat => {
-  if (!API_KEY || API_KEY === AIzaSyBaSu0FpNpmLHdsJxiGhLCATwnzeTF42v0") {
+  if (!API_KEY || API_KEY === YOUR_API_KEY_HERE") {
     // Provide a more descriptive error message to guide the user.
     throw new Error("API_KEY is not set. Please add your Gemini API key to the script tag in index.html.");
   }
