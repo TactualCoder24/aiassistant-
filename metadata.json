@@ -1,0 +1,5 @@
+{
+  "name": "AI Psychologist Assistant",
+  "description": "A conversational AI chatbot designed to act as a supportive psychologist assistant, offering a safe space for users to express their thoughts and feelings. It provides empathetic listening and general guidance, with a clear disclaimer that it is not a substitute for professional medical advice.",
+  "requestFramePermissions": []
+}

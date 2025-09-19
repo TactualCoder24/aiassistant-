@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Psychologist Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- 
+      For local development, you need to provide your API key.
+      Replace "YOUR_API_KEY_HERE" with your actual Google Gemini API key.
+      IMPORTANT: Do not commit this file with your actual key to a public repository.
+    -->
+    <script>
+      window.process = {
+        env: {
+          API_KEY: "YOUR_API_KEY_HERE"
+        }
+      };
+    </script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
